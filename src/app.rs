@@ -865,6 +865,13 @@ impl App {
     const RELEASE_RADAR: &str = "Release Radar";
     const ON_REPEAT: &str = "On Repeat";
     const REPEAT_REWIND: &str = "Repeat Rewind";
+    const DAILY_MIX_1: &str = "Daily Mix 1";
+    const DAILY_MIX_2: &str = "Daily Mix 2";
+    const DAILY_MIX_3: &str = "Daily Mix 3";
+    const DAILY_MIX_4: &str = "Daily Mix 4";
+    const DAILY_MIX_5: &str = "Daily Mix 5";
+    const DAILY_MIX_6: &str = "Daily Mix 6";
+
 
     if self.library.made_for_you_playlists.pages.is_empty() {
       // We shouldn't be fetching all the results immediately - only load the data when the
@@ -873,6 +880,12 @@ impl App {
       self.made_for_you_search_and_add(RELEASE_RADAR);
       self.made_for_you_search_and_add(ON_REPEAT);
       self.made_for_you_search_and_add(REPEAT_REWIND);
+      self.made_for_you_search_and_add(DAILY_MIX_1);
+      self.made_for_you_search_and_add(DAILY_MIX_2);
+      self.made_for_you_search_and_add(DAILY_MIX_3);
+      self.made_for_you_search_and_add(DAILY_MIX_4);
+      self.made_for_you_search_and_add(DAILY_MIX_5);
+      self.made_for_you_search_and_add(DAILY_MIX_6);
     }
   }
 
